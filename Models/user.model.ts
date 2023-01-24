@@ -10,7 +10,7 @@ interface userData {
 
 interface user extends userData, Document {}
 
-const userSchema = new Schema(
+const userSchema = new Schema<userData>(
   {
     name: {
       type: String,
